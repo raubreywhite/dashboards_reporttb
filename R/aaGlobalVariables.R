@@ -1,8 +1,10 @@
 #' DashboardFolder
 #' @export DashboardFolder
 DashboardFolder <- fhi::DashboardFolder
-fhi::DashboardInitialise(
+try({
+  fhi::DashboardInitialise(
   STUB="/",
   SRC="src",
   NAME="reporttb"
 )
+},TRUE)
