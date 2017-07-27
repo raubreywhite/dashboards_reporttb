@@ -1,5 +1,5 @@
 #' EmailNotificationOfNewData
-#' @import RAWmisc
+#' @import fhi
 #' @export EmailNotificationOfNewData
 EmailNotificationOfNewData <- function(){
   emailText <- paste0(
@@ -9,7 +9,7 @@ EmailNotificationOfNewData <- function(){
     ")
 
   if(Sys.getenv("COMPUTER")=="smhb"){
-    RAWmisc::DashboardEmail("reporttb_results",
+    fhi::DashboardEmail("reporttb_results",
                           "New TB Report",
                           emailText)
   }
