@@ -1,4 +1,4 @@
 library(testthat)
-library(sykdomspuls)
+library(reporttb)
 
-test_check("sykdomspuls")
+test_check("reporttb")
